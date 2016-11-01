@@ -23,23 +23,23 @@
                     $scope.pdfUrl = URL.createObjectURL(blob);
 					var fileName = "report.pdf";
 					var contentFile = blob;
-					$cordovaFile.createDir(cordova.file.externalRootDirectory, "Inoic PDF", true)
-					.then(function (success) {
-						//alert("success");
-						//alert(JSON.stringify(success));
+					// $cordovaFile.createDir(cordova.file.externalRootDirectory, "Inoic PDF", true)
+					// .then(function (success) {
+						// //alert("success");
+						// //alert(JSON.stringify(success));
 						
-						$cordovaFile.writeFile(success.nativeURL, fileName,contentFile, true)
-						.then(function (success) {
-							// success
-							//alert(JSON.stringify(success));
-						}, function (error) {
-							// error
-						});
+						// $cordovaFile.writeFile(success.nativeURL, fileName,contentFile, true)
+						// .then(function (success) {
+							// // success
+							// //alert(JSON.stringify(success));
+						// }, function (error) {
+							// // error
+						// });
 						
-					}, function (error) {
-						alert("error");
-						alert(error);
-					});
+					// }, function (error) {
+						// alert("error");
+						// alert(error);
+					// });
                     // Display the modal view
                     vm.modal.show();
                 });
